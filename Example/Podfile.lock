@@ -1,0 +1,27 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - HudLib (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - HudLib (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  HudLib:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  HudLib: c926e8593ce48452145dc4b967a1e1ca9c8c46d5
+
+PODFILE CHECKSUM: 052245d3bbd67413651a6f61dd6034967a884b22
+
+COCOAPODS: 1.7.5

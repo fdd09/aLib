@@ -1,0 +1,22 @@
+{
+  "name": "HudLib",
+  "version": "0.1.0",
+  "summary": "A short description of HudLib.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/fdd09/HudLib",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "fdd09": "fengdongwang@aikucun.com"
+  },
+  "source": {
+    "git": "https://github.com/fdd09/HudLib.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "HudLib/Classes/**/*"
+}

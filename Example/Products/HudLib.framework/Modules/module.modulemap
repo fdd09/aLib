@@ -1,0 +1,6 @@
+framework module HudLib {
+  umbrella header "HudLib.h"
+
+  export *
+  module * { export * }
+}
