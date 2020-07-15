@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HudLib'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'aaaaa.'
 
 # This description is used to generate tags and improve search results.
@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
   if ENV['BINARY']
     s.ios.vendored_framework = 'Example/TestLib_Products/*.framework'
   else
-    s.source_files = 'TestLib/Classes/**/*'
+    s.source_files = 'HudLib/Classes/**/*'
   end
   
   
