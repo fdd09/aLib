@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
 
   if ENV['BINARY']
-    s.ios.vendored_framework = 'Example/TestLib_Products/*.framework'
+    s.ios.vendored_framework = 'Example/Products/*.framework'
   else
     s.source_files = 'HudLib/Classes/**/*'
   end
