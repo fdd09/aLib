@@ -19,24 +19,27 @@ Pod::Spec.new do |s|
 
   s.description      = 'bbbbbbbbbb'
 
-  s.homepage         = 'https://github.com/fdd09/testLib.git'
+  s.homepage         = 'https://github.com/fdd09/aLib.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'fdd09' => 'fengdongwang@aikucun.com' }
-  s.source           = { :git => 'https://github.com/fdd09/HudLib.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/fdd09/aLib.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'HudLib/Classes/**/*'
+  if ENV['BINARY']
+    s.ios.vendored_framework = 'Example/TestLib_Products/*.framework'
+  else
+    s.source_files = 'TestLib/Classes/**/*'
+  end
+  
   
   # s.resource_bundles = {
-  #   'HudLib' => ['HudLib/Assets/*.png']
+  #   'TestLib' => ['TestLib/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
-  
-  
+   s.frameworks = 'UIKit', 'MapKit'
+   s.dependency 'AFNetworking', '~> 4.0.0'
 end
